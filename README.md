@@ -18,11 +18,12 @@ Search API to return possible matches across all columns and all rows, ordered b
 Request URL - /api/search?q=Mumbai&limit=2&offset=1
 
 Image:
-![Screenshot 2023-02-28 191459](https://user-images.githubusercontent.com/77921023/221874134-5f875a65-01e7-4713-a943-8afb4eecb005.jpg)
+![Screenshot 2023-02-28 191407](https://user-images.githubusercontent.com/77921023/221874218-0436caad-341d-4ae1-9ba3-97fa2a78f900.jpg)
+
 
 # Case 2
 Branch API to return possible matches based on the branch name ordered by IFSC code (descending order) with limit and offset
 
 Request URL - /api/branch?q=LONI&limit=1&offset=1
 Image:
-![Screenshot 2023-02-28 191407](https://user-images.githubusercontent.com/77921023/221874218-0436caad-341d-4ae1-9ba3-97fa2a78f900.jpg
+![Screenshot 2023-02-28 191459](https://user-images.githubusercontent.com/77921023/221874134-5f875a65-01e7-4713-a943-8afb4eecb005.jpg)
