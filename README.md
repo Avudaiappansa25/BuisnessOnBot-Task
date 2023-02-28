@@ -25,5 +25,6 @@ Image:
 Branch API to return possible matches based on the branch name ordered by IFSC code (descending order) with limit and offset
 
 Request URL - /api/branch?q=LONI&limit=1&offset=1
+
 Image:
 ![Screenshot 2023-02-28 191459](https://user-images.githubusercontent.com/77921023/221874134-5f875a65-01e7-4713-a943-8afb4eecb005.jpg)
