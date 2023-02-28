@@ -1,34 +1,12 @@
-# Business On Bot - Backend Task
----
+This project is a backend REST service that provides bank details by using the data provided in the API's query parameters. It has been developed using NodeJS, ExpressJS, and MongoDB Atlas. There are three API endpoints that are available in this service.
 
-- This project is a REST service that can fetch bank details, using the data given in the API’s query parameters.
-- It is developed using NodeJS, ExpressJS, MongoDB Atlas
-- It has three API endpoints
-    1. POST *api/import-csv*
-        - Uploads data of CSV file into MongoDB
-    2. GET *api/search* (params -> q=*City Name*, limit=*To Limit the number of output*, offset=*To skip offset number of values*)
-        - Search API to return possible matches across all columns and all rows, ordered by IFSC code (ascending order) with limit and offset.
-        
-    3. GET *api/branch* (params -> q=*City Name*, limit=*To Limit the number of output*, offset=*To skip offset number of values*)
-        -  Branch API to return possible matches based on the branch name ordered by IFSC code (descending order) with limit and offset
+The first API endpoint is POST api/import-csv. This endpoint allows users to upload the data of a CSV file into MongoDB.
+
+The second API endpoint is GET api/search. This endpoint is used to search for bank details by city name, and it allows users to set a limit and offset for the number of results returned. The results are ordered by IFSC code in ascending order.
+
+The third API endpoint is GET api/branch. This endpoint also searches for bank details by city name, and it allows users to set a limit and offset for the number of results returned. The results are ordered by IFSC code in descending order based on the branch name.
+
+Overall, this service provides a simple and efficient way to retrieve bank details by using various search parameters.
 
 
-# Output Screenshots
----
-
-## Case 1
-
-Search API to return possible matches across all columns and all rows, ordered by IFSC code (ascending order) with limit and offset.
-
-Request URL  - /api/search?q=Mumbai&limit=2&offset=1 
-
-
-
-## Case 2
-
-Branch API to return possible matches based on the branch name ordered by IFSC code (descending order) with limit and offset
-
-Request URL  - /api/branch?q=LONI&limit=1&offset=1 
-
-Request URL - /api/branch?q=LONI&limit=1&offset=0
 
